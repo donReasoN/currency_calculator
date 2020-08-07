@@ -8,4 +8,10 @@ html {
 
 .body {
     font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../images/money.jpg');
+    background-size: cover; */
 }
