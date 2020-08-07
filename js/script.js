@@ -1,4 +1,9 @@
 {
+    const addResult = (resultInput, result) => {
+
+        resultInput.value = result.toFixed(2);
+    }
+
     const calculate = (amountInput, currencyInput, rateInput) => {
         
         const eurCurrency = 4.4119;
@@ -27,6 +32,7 @@
                 }
             };
         } else {
+            
             rateInput.value = "";
             resultInput.value = "";
         }
@@ -41,7 +47,8 @@
         const resultInput = document.querySelector('.js-result');
         
         const result = calculate(amountInput, currencyInput, rateInput)
-        
+
+        addResult(resultInput,result);
     }
 
 
