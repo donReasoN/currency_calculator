@@ -30,9 +30,6 @@
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    .form__label {
-        margin: 0 0 10px;
-    }
 } 
 
 .form__label {
@@ -58,7 +55,6 @@
 .form__input--result {
     background-color: rgb(221, 220, 220);
 }
-
 
 .form__button {
     width: 100%;

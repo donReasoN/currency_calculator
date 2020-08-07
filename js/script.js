@@ -2,9 +2,9 @@
     const addResult = (resultInput, result) => {
         
         resultInput.value = result.toFixed(2);
-    }
+    };
 
-    const calculate = (amountInput, currencyInput, rateInput, resultInput) => {
+    const calculate = (amountInput, currencyInput, rateInput) => {
         
         const eurCurrency = 4.4119;
         const usdCurrency = 3.7455;
@@ -32,9 +32,9 @@
                 }
             };
         } else {
-            return 0
+            return 0;
         }
-    }
+    };
 
     const onFormSubmit = (event) => { 
         event.preventDefault();
@@ -47,13 +47,12 @@
         const result = calculate(amountInput, currencyInput, rateInput, resultInput);
 
         addResult(resultInput,result);
-    }
-
+    };
 
     const init = () => {
         const formElement = document.querySelector('.form');
         formElement.addEventListener('submit', onFormSubmit);
-    }
+    };
 
     init();
-}
+};
