@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
+    <script defer src="js/script.js"></script>
 </head>
 
 <body class="body">
@@ -16,7 +17,7 @@
             <legend class="form__legend">Currency calculator</legend>
             <div class="form__conteiner">
                 <label class="form__label" for="select">Choose currency:</label>
-                <select class="form__input" id="select">
+                <select class="form__input js-currency" id="select">
                     <option value="eur">Euro</option>
                     <option value="usd">U.S. dollar</option>
                     <option value="gbp">British pound</option>
@@ -25,15 +26,15 @@
             </div>
             <div class="form__conteiner">
                 <label class="form__label" for="amount">Amount:</label>
-                <input class="form__input" type="number" id="amount" placeholder="Enter amount to change" step="0.01">
+                <input class="form__input js-amount" type="number" id="amount" placeholder="Enter amount to change" step="0.01">
             </div>
             <div class="form__conteiner">
                 <label class="form__label" for="rate">Current rate:</label>
-                <input class="form__input" type="number" id="rate" disabled>
+                <input class="form__input js-rate" type="number" id="rate" disabled>
             </div>
             <div class="form__conteiner">
                 <label class="form__label" for="rate">Result:</label>
-                <input class="form__input" type="number" id="result" readonly>
+                <input class="form__input form__input--result js-result" type="number" id="result" readonly>
             </div>
         </fieldset>
         <p>

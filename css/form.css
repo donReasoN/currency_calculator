@@ -54,9 +54,11 @@
     border-radius: 10px;
 }
 
-.form__input:disabled {
+.form__input:disabled,
+.form__input--result {
     background-color: rgb(221, 220, 220);
 }
+
 
 .form__button {
     width: 100%;
